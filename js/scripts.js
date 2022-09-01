@@ -73,6 +73,14 @@
                 $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
             }
         });
+
+        // Add place to the timeline if exists
+        $this.find('.vtimeline-content').each(function() {
+            var place = $(this).data('place');
+            if (date) { // Prepend if exists
+                $(this).parent().prepend('<span class="vtimeline-place">'+place+'</span>');
+            }
+        });
     });
 
     // Open mobile menu
