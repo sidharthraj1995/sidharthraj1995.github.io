@@ -365,22 +365,49 @@ footer {
     }
 }
 
+/* ============================================================
+   ABOUT SECTION
+   — removed position:absolute from p (broke flow)
+   — centered col-md-8 blocks at all resolutions (were left-anchored)
+   — li text-align changed to center so text doesn't hug the left
+   ============================================================ */
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid #dcd9d9;
+    text-align: center;
 }
 
 #about h2 {
     text-align: center;
-    color: #374054
+    color: #374054;
+}
+
+/* Force Bootstrap columns to center instead of float-left */
+#about .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .col-lg-10,
+#about .col-md-8 {
+    float: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about h3 {
+    color: #374054;
+    margin-bottom: 5px;
 }
 
 #about p {
     color: #74808a;
     margin: 0;
-    text-align: inherit;
-    position: absolute;
     display: block;
+    /* position: absolute removed — pulled content out of flow */
 }
 
 #about ul {
@@ -392,16 +419,18 @@ footer {
 
 #about li {
     color: #74808a;
-    display: inline-block;
-    margin: 7px;
+    display: block;
+    margin: 0 auto 20px auto;
     padding: 5px 10px;
-    /* background: #e4e4ea; */
     list-style: none;
     cursor: default;
-    font-size: 1.2em;
-    text-align: left;
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 620px;
+    line-height: 1.6;
 }
 
+/* ============================================================ */
 
 #experience {
     padding: 50px 15px;
@@ -839,10 +868,6 @@ footer {
     #about {
         text-align: center
     }
-
-    #about p {
-        text-align: center
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -917,6 +942,11 @@ footer {
     .social {
         text-align: center
     }
+
+    /* About: slightly smaller text on mobile */
+    #about li {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -934,12 +964,36 @@ footer {
     }
 }
 
+/* ============================================================
+   LAB GALLERY — responsive image viewer
+   ============================================================ */
+
+/* Gallery wrapper: constrain width, allow scroll if needed */
+.gallery {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Thumbnails: wrap onto multiple rows on small screens */
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
 
 .thumbnails img {
-    height: 80px;
+    height: 70px;
+    width: auto;
     border: 4px solid #555;
     padding: 1px;
-    margin: 0 10px 10px 0;
+    margin: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .thumbnails img:hover {
@@ -947,8 +1001,26 @@ footer {
     cursor: pointer;
 }
 
+/* Preview: fluid width, never overflows the viewport */
+.preview {
+    width: 100%;
+    text-align: center;
+}
+
 .preview img {
     border: 4px solid #444;
     padding: 1px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Smaller thumbs on phones so they fit in 2–3 rows comfortably */
+@media only screen and (max-width: 480px) {
+    .thumbnails img {
+        height: 52px;
+    }
 }
