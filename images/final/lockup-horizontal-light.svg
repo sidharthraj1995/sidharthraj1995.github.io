@@ -1,0 +1,15 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(20,20) scale(0.8333)">
+    <path d="M133.2,45.2 A76,76 0 0,1 191.4,146.0" fill="none" stroke="#1F9D63" stroke-width="12" stroke-linecap="round"/>
+    <path d="M178.2,168.9 A76,76 0 0,1 61.8,168.9" fill="none" stroke="#1F9D63" stroke-width="12" stroke-linecap="round"/>
+    <path d="M48.6,146.0 A76,76 0 0,1 106.8,45.2" fill="none" stroke="#187EA1" stroke-width="12" stroke-linecap="round"/>
+    <path fill="#1F9D63" transform="translate(191.4,146.0) rotate(110)" d="M-9,-8 L12,0 L-9,8 Z"/>
+    <path fill="#1F9D63" transform="translate(61.8,168.9) rotate(230)" d="M-9,-8 L12,0 L-9,8 Z"/>
+    <path fill="#187EA1" transform="translate(106.8,45.2) rotate(350)" d="M-9,-8 L12,0 L-9,8 Z"/>
+    <circle cx="120" cy="120" r="5.5" fill="#12181C"/>
+    <circle cx="120" cy="120" r="11" fill="none" stroke="#1F9D63" stroke-width="1.4" opacity="0.5"/>
+  </g>
+
+  <text x="245" y="118" font-family="'JetBrains Mono','Consolas',monospace" font-size="52" font-weight="700" fill="#12181C" letter-spacing="0.5">SIDHARTH RAJ</text>
+  <text x="246" y="152" font-family="'JetBrains Mono','Consolas',monospace" font-size="21" fill="#5B6B67" letter-spacing="0.3">reduce &#183; repurpose &#183; re<tspan fill="#187EA1" font-weight="700">E</tspan>ngineer</text>
+</svg>
