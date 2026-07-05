@@ -1,547 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Sidharth Raj — Controls, Automation &amp; IoT Engineer</title>
-<meta name="description" content="Sidharth Raj — controls and automation engineer working across DCS/SCADA, embedded systems, IIoT, and software. Home lab, projects, and experience.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sidharth Raj — Controls, Automation &amp; IoT Engineer</title>
+  <meta name="description"
+    content="Sidharth Raj — controls and automation engineer working across DCS/SCADA, embedded systems, IIoT, and software. Home lab, projects, and experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="topbar">
-  <div class="bar">
-    <div class="brand"><span class="dot"></span> sidharthraj1995<span class="path">@lab:~$</span></div>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
-    <nav class="tabs">
-      <a href="#about">about</a>
-      <a href="#experience">experience</a>
-      <a href="#education">education</a>
-      <a href="#projects">projects</a>
-      <a href="#skills">skills</a>
-      <a href="#lab">lab</a>
-      <a href="#contact">contact</a>
-    </nav>
-  </div>
-</div>
-
-<!-- HERO -->
-<section class="hero" style="border-bottom:1px solid var(--line);">
-  <div class="wrap hero-grid">
-    <div>
-      <h1>Sidharth Raj<br><span class="accent">reduce. repurpose. re-engineer.</span></h1>
-      <div class="role">EMBEDDED · AUTOMATION · IIOT · CONTROLS</div>
-      <p class="lede">I work across the full automation stack — from field devices and firmware up to DCS/SCADA and the software that ties it together. Lately that means gas detection systems by day and an over-engineered home lab by night.</p>
-      <div class="cta-row">
-        <a href="/files/Sidharth-Raj-SrAdvSysEng-2026.pdf" class="btn btn-primary">Download résumé</a>
-        <a href="#lab" class="btn btn-ghost">See the lab →</a>
-      </div>
-    </div>
-
-    <div class="telemetry" aria-label="Illustrative home lab status panel">
-      <div class="tbar">
-        <span>LAB.STATUS — arkhamone.local</span>
-        <span class="status"><span class="dot"></span> ONLINE</span>
-      </div>
-      <div class="telemetry-body">
-        <div class="boot-line" data-text="&gt; connecting to arkhamone.local ..."></div>
-        <div class="boot-line" data-text="&gt; mounting home-assistant, mqtt, node-red ..."></div>
-        <div class="boot-line" data-text="&gt; reading zone sensors: bme280, ld2410, sgp30 ..."></div>
-        <div class="boot-line" data-text="&gt; status: all systems nominal."></div>
-
-        <div class="readout-grid">
-          <div class="readout ok">
-            <span class="l">Uptime</span>
-            <span class="v" data-readout="uptime">00:00:00</span>
-          </div>
-          <div class="readout">
-            <span class="l">Temp — Zone 1</span>
-            <span class="v"><span data-readout="temp">22.4</span><span class="u">°C</span></span>
-          </div>
-          <div class="readout">
-            <span class="l">Humidity</span>
-            <span class="v"><span data-readout="rh">41</span><span class="u">%</span></span>
-          </div>
-          <div class="readout">
-            <span class="l">CO₂</span>
-            <span class="v"><span data-readout="co2">512</span><span class="u">ppm</span></span>
-          </div>
-          <div class="readout ok">
-            <span class="l">Presence</span>
-            <span class="v">LD2410</span>
-          </div>
-          <div class="readout ok">
-            <span class="l">Cluster</span>
-            <span class="v">PROXMOX</span>
-          </div>
-        </div>
-
-        <div class="scope">
-          <div class="l">Signal Generator — Ch.1</div>
-          <svg viewBox="0 0 300 56"><polyline class="scope-line" points="0,28 300,28"/></svg>
-        </div>
-      </div>
+  <div class="topbar">
+    <div class="bar">
+      <div class="brand"><span class="dot"></span><a href="/">sidharthraj1995</a><span class="path">@lab:~$</span></div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+      <nav class="tabs">
+        <a href="#about">about</a>
+        <a href="#experience">experience</a>
+        <a href="#education">education</a>
+        <a href="#projects">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#lab">lab</a>
+        <a href="#contact">contact</a>
+      </nav>
     </div>
   </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow"><span class="dot"></span> About</div>
-      <h2>What I actually spend my time on</h2>
-      <p>Three things keep showing up in every role — the field-to-supervisory stack, the conversation between engineering and the people paying for it, and building the tools that make the next project faster.</p>
-    </div>
-    <div class="pillar-grid">
-      <div class="pillar">
-        <span class="tag">01 — CONTROLS &amp; AUTOMATION</span>
-        <h3>Full-stack automation</h3>
-        <p>Deep hands-on experience across DCS/SCADA architecture, machine control software, gas detection systems, and Industry 4.0 integration — comfortable from the field device up to the supervisory layer.</p>
-      </div>
-      <div class="pillar">
-        <span class="tag">02 — TECHNICAL CONSULTANT</span>
-        <h3>Engineering ↔ business</h3>
-        <p>Presenting complex control system architectures to customers, supporting pre/post-sales, and translating technical requirements into accurate, competitive proposals.</p>
-      </div>
-      <div class="pillar">
-        <span class="tag">03 — PRODUCT DEVELOPMENT</span>
-        <h3>Concept to field</h3>
-        <p>Actively involved in New Product Initiatives from concept through deployment — contributing to roadmaps, building internal automation tools, and writing implementation standards.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow"><span class="dot"></span> Experience</div>
-      <h2>Where I've worked</h2>
-      <p>A running log, most recent first.</p>
-    </div>
-
-    <div class="log">
-      <div class="log-entry">
-        <div class="meta">2025 — PRESENT · <span class="loc">Chicago, IL</span></div>
-        <h3>Honeywell Analytics</h3>
-        <span class="role">Sr. Advanced Systems Engineer</span>
-        <ul>
-          <li>Designed and implemented toxic gas monitoring systems — control system architecture, component selection and procurement, system integration, and FAT/SAT/UAT execution.</li>
-          <li>Led Experion GMS product development, including system architecture, technical consultation, field validation, and supporting software tools.</li>
-          <li>Delivered pre- and post-sales engineering support for Honeywell GMS platforms and gas detection hardware; ran on-site control system audits for reliability and compliance.</li>
-          <li>Built internal automation tools and standardized workflows to reduce engineering effort and improve deployment consistency.</li>
-          <li>Supported integration of automation and control systems including PLC programming, HMI design, and Industry 4.0 deployments.</li>
-        </ul>
-      </div>
-
-      <div class="log-entry">
-        <div class="meta">2024 — 2025 · <span class="loc">Chicago, IL</span></div>
-        <h3>Honeywell Process, Measurement and Control</h3>
-        <span class="role">Technical Solution Consultant</span>
-        <ul>
-          <li>Designed and engineered solutions across SCADA/DCS architecture, network infrastructure, advanced controls, connected systems, and cybersecurity.</li>
-          <li>Delivered pre- and post-sales technical support for Experion LX/HS, ControlEdge PLC/RTU, MasterLogic PLC, FDM, PHD, Uniformance Insight, ARO, HC900 SIL2 PLC, and SMSC SIL3 systems.</li>
-          <li>Contributed to New Product Initiatives — reviewing requirements, validating feasibility, supporting cross-functional development.</li>
-          <li>Provided technical training for customers, channel partners, and system integrators.</li>
-          <li>Presented technical and commercial business cases to customer leadership.</li>
-        </ul>
-        <a class="link" href="https://process.honeywell.com/us/en/products/control-and-supervisory-systems">process.honeywell.com →</a>
-      </div>
-
-      <div class="log-entry">
-        <div class="meta">2022 — 2024 · <span class="loc">Chicago, IL</span></div>
-        <h3>Honeywell Intelligrated</h3>
-        <span class="role">Software Engineer II — Amazon Program Lead</span>
-        <ul>
-          <li>Led major WCS deployments for Amazon Fulfillment Centers and high-volume distribution sites.</li>
-          <li>Specialized in WCS/WMS integration, automation testing, and go-live execution.</li>
-          <li>Used C# and C++ to configure machine control for conveyors and high-speed sortation systems.</li>
-          <li>Developed and maintained Machine Control Interface Standards across multiple platforms.</li>
-          <li>Trained new engineers on base code, equipment handling, and troubleshooting.</li>
-        </ul>
-        <a class="link" href="https://www.intelligrated.com/en">intelligrated.com →</a>
-      </div>
-
-      <div class="log-entry">
-        <div class="meta">2020 — 2022 · <span class="loc">Mason, OH</span></div>
-        <h3>Honeywell Intelligrated</h3>
-        <span class="role">Software Engineer</span>
-        <ul>
-          <li>Improved SQL databases for Intelligrated WCS clients, increasing data reliability and performance.</li>
-          <li>Updated C++ and C# code to add features, fix defects, and improve stability.</li>
-          <li>Prepared, configured, and deployed server hardware for customer environments.</li>
-          <li>Edited and maintained XML configs for WCS client, backend, and equipment communication.</li>
-          <li>Wrote custom SQL scripts to automate database updates.</li>
-        </ul>
-      </div>
-
-      <div class="log-entry">
-        <div class="meta">2019 · <span class="loc">Mason, OH</span></div>
-        <h3>Honeywell Intelligrated</h3>
-        <span class="role">Software Engineering Intern</span>
-        <ul>
-          <li>Extensive management of databases alongside Honeywell's proprietary software to configure customer sites.</li>
-        </ul>
-      </div>
-
-      <div class="log-entry">
-        <div class="meta">EARLIER · <span class="loc">Arlington, TX / Chennai &amp; Vadodara, India</span></div>
-        <h3>Compass Group USA, Schneider Electric, Alstom GRID</h3>
-        <span class="role">Retail Supervisor · Intern · Intern</span>
-        <ul>
-          <li>Compass Group USA — supervised UTA retail outlets across campus, delegated task completion.</li>
-          <li>Schneider Electric (Chennai) &amp; Alstom GRID (Vadodara) — early internships in electrical and grid systems.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow"><span class="dot"></span> Education</div>
-      <h2>Coursework that still shows up in the work</h2>
-    </div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="meta">AUG 2017 — DEC 2019 · ARLINGTON, TX</div>
-        <h3>University of Texas at Arlington</h3>
-        <span class="role">M.S. in Computer Engineering</span>
-        <div class="coursework">
-          <span>Advanced Computer Architecture</span>
-          <span>Blockchain &amp; Cryptocurrency</span>
-          <span>Wireless Network</span>
-          <span>Software Testing</span>
-          <span>Internet of Things</span>
-          <span>Embedded Microcontroller</span>
-          <span>Distributed Systems</span>
-          <span>Web Data Management</span>
+  <!-- HERO -->
+  <section class="hero" style="border-bottom:1px solid var(--line);">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Sidharth Raj<br><span class="accent">reduce. repurpose. re-engineer.</span></h1>
+        <div class="role">EMBEDDED · AUTOMATION · IIOT · CONTROLS</div>
+        <p class="lede">I work across the full automation stack — from field devices and firmware up to DCS/SCADA and
+          the software that ties it together. Lately that means gas detection systems by day and an over-engineered home
+          lab by night.</p>
+        <div class="cta-row">
+          <a href="/files/Sidharth-Raj-SrAdvSysEng-2026.pdf" class="btn btn-primary">Download résumé</a>
+          <a href="#lab" class="btn btn-ghost">See the lab →</a>
         </div>
       </div>
-      <div class="edu-card">
-        <div class="meta">JUN 2013 — MAY 2017 · CHENNAI, INDIA</div>
-        <h3>S.R.M. University</h3>
-        <span class="role">B.Tech in Electronics &amp; Instrumentation</span>
-        <div class="coursework">
-          <span>Circuits &amp; Devices</span>
-          <span>Network Analysis</span>
-          <span>Control Systems</span>
-          <span>Linear Integrated Circuits</span>
-          <span>Industrial Instrumentation &amp; Automation</span>
-          <span>Microprocessors &amp; Microcontrollers</span>
-          <span>Electronic Design</span>
-          <span>Process Control</span>
-          <span>Robotics &amp; Automation</span>
-          <span>Logic &amp; Distributed Control System</span>
-          <span>Digital Image Processing</span>
-          <span>Digital Signal Processing</span>
+
+      <div class="telemetry" aria-label="Illustrative home lab status panel">
+        <div class="tbar">
+          <span>LAB.STATUS — arkhamone.local</span>
+          <span class="status"><span class="dot"></span> ONLINE</span>
+        </div>
+        <div class="telemetry-body">
+          <div class="boot-line" data-text="&gt; connecting to arkhamone.local ..."></div>
+          <div class="boot-line" data-text="&gt; mounting home-assistant, mqtt, node-red ..."></div>
+          <div class="boot-line" data-text="&gt; reading zone sensors: bme280, ld2410, sgp30 ..."></div>
+          <div class="boot-line" data-text="&gt; status: all systems nominal."></div>
+
+          <div class="readout-grid">
+            <div class="readout ok">
+              <span class="l">Uptime</span>
+              <span class="v" data-readout="uptime">00:00:00</span>
+            </div>
+            <div class="readout">
+              <span class="l">Temp — Zone 1</span>
+              <span class="v"><span data-readout="temp">22.4</span><span class="u">°C</span></span>
+            </div>
+            <div class="readout">
+              <span class="l">Humidity</span>
+              <span class="v"><span data-readout="rh">41</span><span class="u">%</span></span>
+            </div>
+            <div class="readout">
+              <span class="l">CO₂</span>
+              <span class="v"><span data-readout="co2">512</span><span class="u">ppm</span></span>
+            </div>
+            <div class="readout ok">
+              <span class="l">Presence</span>
+              <span class="v">LD2410</span>
+            </div>
+            <div class="readout ok">
+              <span class="l">Cluster</span>
+              <span class="v">PROXMOX</span>
+            </div>
+          </div>
+
+          <div class="scope">
+            <div class="l">Signal Generator — Ch.1</div>
+            <svg viewBox="0 0 300 56">
+              <polyline class="scope-line" points="0,28 300,28" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow"><span class="dot"></span> Projects</div>
-      <h2>Things I've built</h2>
-      <p>A mix of paid work and after-hours problem solving.</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> About</div>
+        <h2>What I actually spend my time on</h2>
+        <p>Three things keep showing up in every role — the field-to-supervisory stack, the conversation between
+          engineering and the people paying for it, and building the tools that make the next project faster.</p>
+      </div>
+      <div class="pillar-grid">
+        <div class="pillar">
+          <span class="tag">01 — CONTROLS &amp; AUTOMATION</span>
+          <h3>Full-stack automation</h3>
+          <p>Deep hands-on experience across DCS/SCADA architecture, machine control software, gas detection systems,
+            and Industry 4.0 integration — comfortable from the field device up to the supervisory layer.</p>
+        </div>
+        <div class="pillar">
+          <span class="tag">02 — TECHNICAL CONSULTANT</span>
+          <h3>Engineering ↔ business</h3>
+          <p>Presenting complex control system architectures to customers, supporting pre/post-sales, and translating
+            technical requirements into accurate, competitive proposals.</p>
+        </div>
+        <div class="pillar">
+          <span class="tag">03 — PRODUCT DEVELOPMENT</span>
+          <h3>Concept to field</h3>
+          <p>Actively involved in New Product Initiatives from concept through deployment — contributing to roadmaps,
+            building internal automation tools, and writing implementation standards.</p>
+        </div>
+      </div>
     </div>
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="thumb"><img src="/images/lab0.jpeg" alt="Home Automation and Security lab overview"></div>
-        <div class="body">
-          <span class="year">2025 — PRESENT</span>
-          <h3>Home Automation &amp; Security</h3>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Experience</div>
+        <h2>Where I've worked</h2>
+        <p>A running log, most recent first.</p>
+      </div>
+
+      <div class="log">
+        <div class="log-entry">
+          <div class="meta">2025 — PRESENT · <span class="loc">Chicago, IL</span></div>
+          <h3>Honeywell Analytics</h3>
+          <span class="role">Sr. Advanced Systems Engineer</span>
           <ul>
-            <li>Proxmox cluster running Home Assistant, MQTT broker, DNS, NVR, Grafana and Node-Red.</li>
-            <li>Per-zone ESP32 sensors: BME280/AHT20 (temp/RH/pressure), LD2410 (presence), INMP441 (mic), SGP30 (TVOC/CO₂).</li>
-            <li>Frigate + MotionEye NVR across Google, Tapo and Wyze cameras.</li>
-            <li>Repurposed Android tablets as wall-mounted dashboards.</li>
+            <li>Designed and implemented toxic gas monitoring systems — control system architecture, component selection
+              and procurement, system integration, and FAT/SAT/UAT execution.</li>
+            <li>Led Experion GMS product development, including system architecture, technical consultation, field
+              validation, and supporting software tools.</li>
+            <li>Delivered pre- and post-sales engineering support for Honeywell GMS platforms and gas detection
+              hardware; ran on-site control system audits for reliability and compliance.</li>
+            <li>Built internal automation tools and standardized workflows to reduce engineering effort and improve
+              deployment consistency.</li>
+            <li>Supported integration of automation and control systems including PLC programming, HMI design, and
+              Industry 4.0 deployments.</li>
           </ul>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="thumb"><img src="/images/project.jpg" alt="Custom i3 FDM 3D printer"></div>
-        <div class="body">
-          <span class="year">2021 — 2022</span>
-          <h3>Custom i3 FDM 3D Printer</h3>
+
+        <div class="log-entry">
+          <div class="meta">2024 — 2025 · <span class="loc">Chicago, IL</span></div>
+          <h3>Honeywell Process, Measurement and Control</h3>
+          <span class="role">Technical Solution Consultant</span>
           <ul>
-            <li>Modified a cartesian-style Ender 3 Pro — mechanical, electrical and firmware changes.</li>
-            <li>Linear rails, direct-drive extruder, upgraded motherboard, custom Marlin 2.0 firmware.</li>
-            <li>Designed custom parts in FreeCAD and tuned custom slicer profiles.</li>
+            <li>Designed and engineered solutions across SCADA/DCS architecture, network infrastructure, advanced
+              controls, connected systems, and cybersecurity.</li>
+            <li>Delivered pre- and post-sales technical support for Experion LX/HS, ControlEdge PLC/RTU, MasterLogic
+              PLC, FDM, PHD, Uniformance Insight, ARO, HC900 SIL2 PLC, and SMSC SIL3 systems.</li>
+            <li>Contributed to New Product Initiatives — reviewing requirements, validating feasibility, supporting
+              cross-functional development.</li>
+            <li>Provided technical training for customers, channel partners, and system integrators.</li>
+            <li>Presented technical and commercial business cases to customer leadership.</li>
+          </ul>
+          <a class="link"
+            href="https://process.honeywell.com/us/en/products/control-and-supervisory-systems">process.honeywell.com
+            →</a>
+        </div>
+
+        <div class="log-entry">
+          <div class="meta">2022 — 2024 · <span class="loc">Chicago, IL</span></div>
+          <h3>Honeywell Intelligrated</h3>
+          <span class="role">Software Engineer II — Amazon Program Lead</span>
+          <ul>
+            <li>Led major WCS deployments for Amazon Fulfillment Centers and high-volume distribution sites.</li>
+            <li>Specialized in WCS/WMS integration, automation testing, and go-live execution.</li>
+            <li>Used C# and C++ to configure machine control for conveyors and high-speed sortation systems.</li>
+            <li>Developed and maintained Machine Control Interface Standards across multiple platforms.</li>
+            <li>Trained new engineers on base code, equipment handling, and troubleshooting.</li>
+          </ul>
+          <a class="link" href="https://www.intelligrated.com/en">intelligrated.com →</a>
+        </div>
+
+        <div class="log-entry">
+          <div class="meta">2020 — 2022 · <span class="loc">Mason, OH</span></div>
+          <h3>Honeywell Intelligrated</h3>
+          <span class="role">Software Engineer</span>
+          <ul>
+            <li>Improved SQL databases for Intelligrated WCS clients, increasing data reliability and performance.</li>
+            <li>Updated C++ and C# code to add features, fix defects, and improve stability.</li>
+            <li>Prepared, configured, and deployed server hardware for customer environments.</li>
+            <li>Edited and maintained XML configs for WCS client, backend, and equipment communication.</li>
+            <li>Wrote custom SQL scripts to automate database updates.</li>
           </ul>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="thumb"><img src="/images/project.jpg" alt="Document automation tool built for Honeywell"></div>
-        <div class="body">
-          <span class="year">2019</span>
-          <h3>Document Automation Tool — Honeywell</h3>
+
+        <div class="log-entry">
+          <div class="meta">2019 · <span class="loc">Mason, OH</span></div>
+          <h3>Honeywell Intelligrated</h3>
+          <span class="role">Software Engineering Intern</span>
           <ul>
-            <li>Proprietary WFA app (C# / .NET) to generate proposals and contracts on the go.</li>
-            <li>Cut document turnaround from ~40 minutes to under 10.</li>
-            <li>Estimated to save Honeywell over 50% in related engineering time each year.</li>
+            <li>Extensive management of databases alongside Honeywell's proprietary software to configure customer
+              sites.</li>
           </ul>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="thumb"><img src="/images/project.jpg" alt="Connect4 game with Komodo blockchain integration"></div>
-        <div class="body">
-          <span class="year">2019</span>
-          <h3>Connect4 w/ Komodo Blockchain</h3>
+
+        <div class="log-entry">
+          <div class="meta">EARLIER · <span class="loc">Arlington, TX / Chennai &amp; Vadodara, India</span></div>
+          <h3>Compass Group USA, Schneider Electric, Alstom GRID</h3>
+          <span class="role">Retail Supervisor · Intern · Intern</span>
           <ul>
-            <li>Python game with single-player and multiplayer modes.</li>
-            <li>Connected to the Komodo blockchain to reward the winner.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="thumb"><img src="/images/project.jpg" alt="Direct digital synthesis signal generator and network analyzer"></div>
-        <div class="body">
-          <span class="year">2018</span>
-          <h3>DDS Signal Generator &amp; Scalar Network Analyzer</h3>
-          <ul>
-            <li>Captured analog signals and generated waveforms via a custom-built system.</li>
-            <li>Command-line interface for control and measurement readback.</li>
-            <li>Output impedance correction, scalar network analysis, and voltmeter functions.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="thumb"><img src="/images/project.jpg" alt="Biomedical dental trolley"></div>
-        <div class="body">
-          <span class="year">2017</span>
-          <h3>Biomedical Dental Trolley</h3>
-          <ul>
-            <li>Led a team of 3 to design a mobile trolley equipped for dental professionals.</li>
-            <li>Built an economical prototype for ~$350 — a 50% cost reduction.</li>
-            <li>In use across rural Tamil Nadu, India, providing affordable dental services.</li>
+            <li>Compass Group USA — supervised UTA retail outlets across campus, delegated task completion.</li>
+            <li>Schneider Electric (Chennai) &amp; Alstom GRID (Vadodara) — early internships in electrical and grid
+              systems.</li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="projects-more">
-      <a href="https://github.com/sidharthraj1995" class="btn btn-ghost">View more on GitHub →</a>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Education</div>
+        <h2>Coursework that still shows up in the work</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="meta">AUG 2017 — DEC 2019 · ARLINGTON, TX</div>
+          <h3>University of Texas at Arlington</h3>
+          <span class="role">M.S. in Computer Engineering</span>
+          <div class="coursework">
+            <span>Advanced Computer Architecture</span>
+            <span>Blockchain &amp; Cryptocurrency</span>
+            <span>Wireless Network</span>
+            <span>Software Testing</span>
+            <span>Internet of Things</span>
+            <span>Embedded Microcontroller</span>
+            <span>Distributed Systems</span>
+            <span>Web Data Management</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="meta">JUN 2013 — MAY 2017 · CHENNAI, INDIA</div>
+          <h3>S.R.M. University</h3>
+          <span class="role">B.Tech in Electronics &amp; Instrumentation</span>
+          <div class="coursework">
+            <span>Circuits &amp; Devices</span>
+            <span>Network Analysis</span>
+            <span>Control Systems</span>
+            <span>Linear Integrated Circuits</span>
+            <span>Industrial Instrumentation &amp; Automation</span>
+            <span>Microprocessors &amp; Microcontrollers</span>
+            <span>Electronic Design</span>
+            <span>Process Control</span>
+            <span>Robotics &amp; Automation</span>
+            <span>Logic &amp; Distributed Control System</span>
+            <span>Digital Image Processing</span>
+            <span>Digital Signal Processing</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Projects</div>
+        <h2>Things I've built</h2>
+        <p>A mix of paid work and after-hours problem solving.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="thumb"><img src="/images/lab0.jpeg" alt="Home Automation and Security lab overview"></div>
+          <div class="body">
+            <span class="year">2025 — PRESENT</span>
+            <h3>Home Automation &amp; Security</h3>
+            <ul>
+              <li>Proxmox cluster running Home Assistant, MQTT broker, DNS, NVR, Grafana and Node-Red.</li>
+              <li>Per-zone ESP32 sensors: BME280/AHT20 (temp/RH/pressure), LD2410 (presence), INMP441 (mic), SGP30
+                (TVOC/CO₂).</li>
+              <li>Frigate + MotionEye NVR across Google, Tapo and Wyze cameras.</li>
+              <li>Repurposed Android tablets as wall-mounted dashboards.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="thumb"><img src="/images/project.jpg" alt="Custom i3 FDM 3D printer"></div>
+          <div class="body">
+            <span class="year">2021 — 2022</span>
+            <h3>Custom i3 FDM 3D Printer</h3>
+            <ul>
+              <li>Modified a cartesian-style Ender 3 Pro — mechanical, electrical and firmware changes.</li>
+              <li>Linear rails, direct-drive extruder, upgraded motherboard, custom Marlin 2.0 firmware.</li>
+              <li>Designed custom parts in FreeCAD and tuned custom slicer profiles.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="thumb"><img src="/images/project.jpg" alt="Document automation tool built for Honeywell"></div>
+          <div class="body">
+            <span class="year">2019</span>
+            <h3>Document Automation Tool — Honeywell</h3>
+            <ul>
+              <li>Proprietary WFA app (C# / .NET) to generate proposals and contracts on the go.</li>
+              <li>Cut document turnaround from ~40 minutes to under 10.</li>
+              <li>Estimated to save Honeywell over 50% in related engineering time each year.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="thumb"><img src="/images/project.jpg" alt="Connect4 game with Komodo blockchain integration">
+          </div>
+          <div class="body">
+            <span class="year">2019</span>
+            <h3>Connect4 w/ Komodo Blockchain</h3>
+            <ul>
+              <li>Python game with single-player and multiplayer modes.</li>
+              <li>Connected to the Komodo blockchain to reward the winner.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="thumb"><img src="/images/project.jpg"
+              alt="Direct digital synthesis signal generator and network analyzer"></div>
+          <div class="body">
+            <span class="year">2018</span>
+            <h3>DDS Signal Generator &amp; Scalar Network Analyzer</h3>
+            <ul>
+              <li>Captured analog signals and generated waveforms via a custom-built system.</li>
+              <li>Command-line interface for control and measurement readback.</li>
+              <li>Output impedance correction, scalar network analysis, and voltmeter functions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="thumb"><img src="/images/project.jpg" alt="Biomedical dental trolley"></div>
+          <div class="body">
+            <span class="year">2017</span>
+            <h3>Biomedical Dental Trolley</h3>
+            <ul>
+              <li>Led a team of 3 to design a mobile trolley equipped for dental professionals.</li>
+              <li>Built an economical prototype for ~$350 — a 50% cost reduction.</li>
+              <li>In use across rural Tamil Nadu, India, providing affordable dental services.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/sidharthraj1995" class="btn btn-ghost">View more on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Skills</div>
+        <h2>Loaded modules</h2>
+        <p>Grouped by where they actually get used.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Industrial &amp; Controls</h3>
+          <div class="chip-row">
+            <span class="chip">Industrial Control System Design</span>
+            <span class="chip">SCADA Design &amp; Implementation</span>
+            <span class="chip">DCS System Design</span>
+            <span class="chip">PLC | RTU</span>
+            <span class="chip">IoT Integration</span>
+            <span class="chip">Product Management &amp; Development</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Protocols</h3>
+          <div class="chip-row">
+            <span class="chip">MODBUS</span>
+            <span class="chip">MQTT</span>
+            <span class="chip">DNP3</span>
+            <span class="chip">I2C</span>
+            <span class="chip">UART</span>
+            <span class="chip">SPI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Languages &amp; Frameworks</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">C</span>
+            <span class="chip">C#</span>
+            <span class="chip">C++</span>
+            <span class="chip">MicroPython</span>
+            <span class="chip">SQL</span>
+            <span class="chip">XML</span>
+            <span class="chip">Kotlin*</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">PHP</span>
+            <span class="chip">CodeIgniter</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Hardware &amp; Boards</h3>
+          <div class="chip-row">
+            <span class="chip">Arduino</span>
+            <span class="chip">ESP32</span>
+            <span class="chip">ESP8266</span>
+            <span class="chip">STM32</span>
+            <span class="chip">LonganNano</span>
+            <span class="chip">ATTiny85</span>
+            <span class="chip">Lilypad</span>
+            <span class="chip">Raspberry Pi</span>
+            <span class="chip">Atomic Pi</span>
+            <span class="chip">Rock64</span>
+            <span class="chip">ARM</span>
+            <span class="chip">x86</span>
+            <span class="chip">Hardware Design</span>
+            <span class="chip">Firmware</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Platforms &amp; Tools</h3>
+          <div class="chip-row">
+            <span class="chip">Node-Red</span>
+            <span class="chip">Docker</span>
+            <span class="chip">PartKeepr</span>
+            <span class="chip">Proxmox</span>
+            <span class="chip">Arch Linux</span>
+            <span class="chip">Ubuntu</span>
+            <span class="chip">DietPi</span>
+            <span class="chip">MacOS</span>
+            <span class="chip">Windows</span>
+            <span class="chip">Android Studio</span>
+            <span class="chip">Trello</span>
+            <span class="chip">Agile</span>
+            <span class="chip">SVN</span>
+            <span class="chip">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Fabrication</h3>
+          <div class="chip-row">
+            <span class="chip">3D Printing</span>
+            <span class="chip">FreeCAD</span>
+            <span class="chip">Fusion360</span>
+            <span class="chip">OpenSCAD</span>
+            <span class="chip">PrusaSlicer</span>
+            <span class="chip">Cura</span>
+            <span class="chip">OctoPrint</span>
+            <span class="chip">Blockchain</span>
+            <span class="chip">Cryptocurrency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-row">
+        <div class="badge-item">
+          <span class="ico">◆</span>
+          <div>
+            <h4>Yokogawa — Distributed Control System</h4>
+            <p>Certification</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <span class="ico">◆</span>
+          <div>
+            <h4>Bravo Award — Bronze</h4>
+            <p>Honeywell — "Think big.... Then make it happen"</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <span class="ico">◆</span>
+          <div>
+            <h4>Intra-Dept Blockchain Challenge — Ranked #3</h4>
+            <p>Connect4 with Komodo Blockchain</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAB -->
+  <section id="lab">
+    <div class="wrap">
+      <div class="lab-intro">
+        <div class="section-head" style="margin-bottom:0;">
+          <div class="eyebrow"><span class="dot"></span> The Lab</div>
+          <h2>Where the magic happens</h2>
+          <p>A seriously over-built work-from-home setup: ArkhamOne (the mainframe), a Proxmox cluster, a solder station
+            that sees more action than the kitchen stove, and enough SBCs to worry my electric bill.</p>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="g-item big"><img src="/images/lab00.jpeg" alt="ArkhamOne — the home lab mainframe"><span
+            class="cap">ArkhamOne</span></div>
+        <div class="g-item"><img src="/images/lab0.jpeg" alt="Lab overview"><span class="cap">Overview</span></div>
+        <div class="g-item"><img src="/images/lab1.jpeg" alt="Mainframe running Arch Linux"><span class="cap">Mainframe
+            — Arch Linux</span></div>
+        <div class="g-item"><img src="/images/lab4.jpeg" alt="Prototyping corner"><span class="cap">Prototype
+            Corner</span></div>
+        <div class="g-item"><img src="/images/lab3.jpeg" alt="Solder station"><span class="cap">Solder Station</span>
+        </div>
+        <div class="g-item"><img src="/images/lab7.jpeg" alt="Component storage bin managed with PartKeepr"><span
+            class="cap">Storage Bin — PartKeepr</span></div>
+        <div class="g-item"><img src="/images/lab6.jpeg" alt="Storage shelving"><span class="cap">Storage + Nug</span>
+        </div>
+        <div class="g-item"><img src="/images/lab9.jpeg" alt="Single board computer collection"><span
+            class="cap">SBCs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Lab image viewer">
+    <div class="lightbox-inner">
+      <img src="" alt="">
+      <div class="lb-meta">
+        <span class="lb-caption"></span>
+        <span class="lb-counter"></span>
+      </div>
+    </div>
+    <button class="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" aria-label="Previous image">‹</button>
+    <button class="lb-next" aria-label="Next image">›</button>
   </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow"><span class="dot"></span> Skills</div>
-      <h2>Loaded modules</h2>
-      <p>Grouped by where they actually get used.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Industrial &amp; Controls</h3>
-        <div class="chip-row">
-          <span class="chip">Industrial Control System Design</span>
-          <span class="chip">SCADA Design &amp; Implementation</span>
-          <span class="chip">DCS System Design</span>
-          <span class="chip">PLC | RTU</span>
-          <span class="chip">IoT Integration</span>
-          <span class="chip">Product Management &amp; Development</span>
-        </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Contact</div>
+        <h2 style="font-size:clamp(24px,3vw,34px);margin-bottom:14px;">Get in touch</h2>
+        <p style="margin-bottom:28px;">Open to conversations about controls, automation, IoT, or anything that involves
+          taking something apart to understand it.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send</button>
+          <p class="form-note" style="font-size:13px;color:var(--text-faint);margin-top:4px;"></p>
+        </form>
       </div>
-      <div class="skill-group">
-        <h3>Protocols</h3>
-        <div class="chip-row">
-          <span class="chip">MODBUS</span>
-          <span class="chip">MQTT</span>
-          <span class="chip">DNP3</span>
-          <span class="chip">I2C</span>
-          <span class="chip">UART</span>
-          <span class="chip">SPI</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Languages &amp; Frameworks</h3>
-        <div class="chip-row">
-          <span class="chip">Python</span>
-          <span class="chip">C</span>
-          <span class="chip">C#</span>
-          <span class="chip">C++</span>
-          <span class="chip">MicroPython</span>
-          <span class="chip">SQL</span>
-          <span class="chip">XML</span>
-          <span class="chip">Kotlin*</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">PHP</span>
-          <span class="chip">CodeIgniter</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Hardware &amp; Boards</h3>
-        <div class="chip-row">
-          <span class="chip">Arduino</span>
-          <span class="chip">ESP32</span>
-          <span class="chip">ESP8266</span>
-          <span class="chip">STM32</span>
-          <span class="chip">LonganNano</span>
-          <span class="chip">ATTiny85</span>
-          <span class="chip">Lilypad</span>
-          <span class="chip">Raspberry Pi</span>
-          <span class="chip">Atomic Pi</span>
-          <span class="chip">Rock64</span>
-          <span class="chip">ARM</span>
-          <span class="chip">x86</span>
-          <span class="chip">Hardware Design</span>
-          <span class="chip">Firmware</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Platforms &amp; Tools</h3>
-        <div class="chip-row">
-          <span class="chip">Node-Red</span>
-          <span class="chip">Docker</span>
-          <span class="chip">PartKeepr</span>
-          <span class="chip">Proxmox</span>
-          <span class="chip">Arch Linux</span>
-          <span class="chip">Ubuntu</span>
-          <span class="chip">DietPi</span>
-          <span class="chip">MacOS</span>
-          <span class="chip">Windows</span>
-          <span class="chip">Android Studio</span>
-          <span class="chip">Trello</span>
-          <span class="chip">Agile</span>
-          <span class="chip">SVN</span>
-          <span class="chip">GitHub</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Fabrication</h3>
-        <div class="chip-row">
-          <span class="chip">3D Printing</span>
-          <span class="chip">FreeCAD</span>
-          <span class="chip">Fusion360</span>
-          <span class="chip">OpenSCAD</span>
-          <span class="chip">PrusaSlicer</span>
-          <span class="chip">Cura</span>
-          <span class="chip">OctoPrint</span>
-          <span class="chip">Blockchain</span>
-          <span class="chip">Cryptocurrency</span>
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Elsewhere</div>
+        <div class="social-list">
+          <a href="https://github.com/sidharthraj1995">→ github.com/sidharthraj1995</a>
+          <a href="https://linkedin.com/in/sidharthraj1995">→ linkedin.com/in/sidharthraj1995</a>
+          <a href="/files/Sidharth-Raj-SrAdvSysEng-2026.pdf">→ download résumé (PDF)</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="badges-row">
-      <div class="badge-item">
-        <span class="ico">◆</span>
-        <div>
-          <h4>Yokogawa — Distributed Control System</h4>
-          <p>Certification</p>
-        </div>
-      </div>
-      <div class="badge-item">
-        <span class="ico">◆</span>
-        <div>
-          <h4>Bravo Award — Bronze</h4>
-          <p>Honeywell — "Think big.... Then make it happen"</p>
-        </div>
-      </div>
-      <div class="badge-item">
-        <span class="ico">◆</span>
-        <div>
-          <h4>Intra-Dept Blockchain Challenge — Ranked #3</h4>
-          <p>Connect4 with Komodo Blockchain</p>
-        </div>
-      </div>
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Sidharth Raj</span>
+      <span>Built with HTML, CSS &amp; too much coffee.</span>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- LAB -->
-<section id="lab">
-  <div class="wrap">
-    <div class="lab-intro">
-      <div class="section-head" style="margin-bottom:0;">
-        <div class="eyebrow"><span class="dot"></span> The Lab</div>
-        <h2>Where the magic happens</h2>
-        <p>A seriously over-built work-from-home setup: ArkhamOne (the mainframe), a Proxmox cluster, a solder station that sees more action than the kitchen stove, and enough SBCs to worry my electric bill.</p>
-      </div>
-    </div>
-    <div class="gallery-grid">
-      <div class="g-item big"><img src="/images/lab00.jpeg" alt="ArkhamOne — the home lab mainframe"><span class="cap">ArkhamOne</span></div>
-      <div class="g-item"><img src="/images/lab0.jpeg" alt="Lab overview"><span class="cap">Overview</span></div>
-      <div class="g-item"><img src="/images/lab1.jpeg" alt="Mainframe running Arch Linux"><span class="cap">Mainframe — Arch Linux</span></div>
-      <div class="g-item"><img src="/images/lab4.jpeg" alt="Prototyping corner"><span class="cap">Prototype Corner</span></div>
-      <div class="g-item"><img src="/images/lab3.jpeg" alt="Solder station"><span class="cap">Solder Station</span></div>
-      <div class="g-item"><img src="/images/lab7.jpeg" alt="Component storage bin managed with PartKeepr"><span class="cap">Storage Bin — PartKeepr</span></div>
-      <div class="g-item"><img src="/images/lab6.jpeg" alt="Storage shelving"><span class="cap">Storage + Nug</span></div>
-      <div class="g-item"><img src="/images/lab9.jpeg" alt="Single board computer collection"><span class="cap">SBCs</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- lightbox -->
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Lab image viewer">
-  <div class="lightbox-inner">
-    <img src="" alt="">
-    <div class="lb-meta">
-      <span class="lb-caption"></span>
-      <span class="lb-counter"></span>
-    </div>
-  </div>
-  <button class="lb-close" aria-label="Close">✕</button>
-  <button class="lb-prev" aria-label="Previous image">‹</button>
-  <button class="lb-next" aria-label="Next image">›</button>
-</div>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="eyebrow"><span class="dot"></span> Contact</div>
-      <h2 style="font-size:clamp(24px,3vw,34px);margin-bottom:14px;">Get in touch</h2>
-      <p style="margin-bottom:28px;">Open to conversations about controls, automation, IoT, or anything that involves taking something apart to understand it.</p>
-      <form class="contact-form" action="#" method="post">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="justify-self:start;">Send</button>
-        <p class="form-note" style="font-size:13px;color:var(--text-faint);margin-top:4px;"></p>
-      </form>
-    </div>
-    <div>
-      <div class="eyebrow"><span class="dot"></span> Elsewhere</div>
-      <div class="social-list">
-        <a href="https://github.com/sidharthraj1995">→ github.com/sidharthraj1995</a>
-        <a href="https://linkedin.com/in/sidharthraj1995">→ linkedin.com/in/sidharthraj1995</a>
-        <a href="/files/Sidharth-Raj-SrAdvSysEng-2026.pdf">→ download résumé (PDF)</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap footer-row">
-    <span>© 2026 Sidharth Raj</span>
-    <span>Built with HTML, CSS &amp; too much coffee.</span>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
